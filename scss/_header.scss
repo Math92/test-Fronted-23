@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-right: 8rem;
+    section:last-child {
+        nav {
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 2rem;
+                li {
+                    a {
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    section:first-child {
+        padding-left: 8rem;
+    }
+}

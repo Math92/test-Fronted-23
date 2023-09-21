@@ -1,0 +1,30 @@
+@mixin icon($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+footer {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 6rem;
+    align-items: flex-end;
+    section:last-child {
+        display: flex;
+        gap: 1.5rem;
+        a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 1px solid transparent;            
+            box-shadow: -3px 0 0 0 $bg-primary;
+            img {
+                @include icon(25px, 25px); 
+            }
+        }
+    }
+}
+
